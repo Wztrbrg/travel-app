@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
+      integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA=="
+      crossorigin="anonymous" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"></script>
+    <script src="travelService.js"></script>
+    <script src="app1.js" defer></script>
+  </head>
+  <body>
+    <div>
+      <h2 class="text-center display-3 bg-primary p-3">Travel App</h2>
+      <div class="m-3">
+        <form class="travel-form">
+          <label>Nuvarande plats</label>
+          <input type="text" class="current-location-field" required />
+          <label>Destination</label>
+          <input type="text" class="destination-field" required />
+          <button class="search-btn" onclick="getInput()">Sök</button>
+        </form>
+      </div>
+      <table class="travel-table table-hover table table-primary table-striped">
+        <thead>
+          <tr>
+            <th>Från</th>
+            <th>Till</th>
+            <th>Datum</th>
+            <th>Avgång</th>
+            <th>Ankomst</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </body>
+</html>
